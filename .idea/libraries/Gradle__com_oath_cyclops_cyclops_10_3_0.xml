@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.oath.cyclops:cyclops:10.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.oath.cyclops/cyclops/10.3.0/9407b68f5a14ca98fd6afef5983e15bf1a37582c/cyclops-10.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.oath.cyclops/cyclops/10.3.0/587adf3f8026e7d244407478855d1f6379e2598/cyclops-10.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.oath.cyclops:cyclops-anym:10.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.oath.cyclops/cyclops-anym/10.3.0/d7405c1eaa890d45a470e01bcc0e867ef244099e/cyclops-anym-10.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.oath.cyclops/cyclops-anym/10.3.0/e1f944a3b88fe8001fc880d9e222264ca808c14d/cyclops-anym-10.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

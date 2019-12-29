@@ -1,0 +1,27 @@
+
+plugins {
+    id 'java-library'
+    id 'idea'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:27.0.1-jre'
+    implementation 'io.vavr:vavr:0.9.3'
+    implementation 'com.oath.cyclops:cyclops:10.3.0'
+    implementation 'com.oath.cyclops:cyclops-anym:10.3.0'
+    implementation 'com.typesafe:config:1.4.0'
+    implementation 'com.shazam:shazamcrest:0.11'
+
+
+    // test
+    testImplementation 'junit:junit:4.12'
+}
+
+
+mainClassName = 'jobSity.test.App'

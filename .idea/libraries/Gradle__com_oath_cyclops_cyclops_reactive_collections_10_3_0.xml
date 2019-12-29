@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.oath.cyclops:cyclops-reactive-collections:10.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.oath.cyclops/cyclops-reactive-collections/10.3.0/6cbce39f4be4a770659cb5c7cfe35959aedb7e90/cyclops-reactive-collections-10.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.oath.cyclops/cyclops-reactive-collections/10.3.0/c7379401a2c7c7a837dfe7fc0917378eadf61be0/cyclops-reactive-collections-10.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

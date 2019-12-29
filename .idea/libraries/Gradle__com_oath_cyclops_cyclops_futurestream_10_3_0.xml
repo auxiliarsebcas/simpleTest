@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.oath.cyclops:cyclops-futurestream:10.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.oath.cyclops/cyclops-futurestream/10.3.0/c1af32eaee3090bfd6818cdd623b89851766bfcd/cyclops-futurestream-10.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.oath.cyclops/cyclops-futurestream/10.3.0/9f16fe90f1c7c3bfc55a348274da6cf0b1b2bf29/cyclops-futurestream-10.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
