@@ -17,6 +17,8 @@ dependencies {
     implementation 'com.oath.cyclops:cyclops-anym:10.3.0'
     implementation 'com.typesafe:config:1.4.0'
     implementation 'com.shazam:shazamcrest:0.11'
+    
+    implementation 'org.apache.commons:commons-lang3:3.9'
 
 
     // test
