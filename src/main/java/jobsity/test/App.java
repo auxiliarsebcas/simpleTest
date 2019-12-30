@@ -8,6 +8,7 @@ import jobsity.test.scoring.ScoringEnvironment;
 import jobsity.test.scoring.repositories.BowlingGameResultRepository;
 import jobsity.test.scoring.repositories.BowlingGameResultRepositoryImpl;
 import jobsity.test.scoring.repositories.ScoringRepositoryImpl;
+import jobsity.test.scoring.services.ProcessGameResultFileServices;
 
 public class App {
     public String getGreeting() {
@@ -21,6 +22,8 @@ public class App {
 
 
 	    ScoringEnvironment environment = new ScoringEnvironment(config, scoringRepository, bowlingGameResultRepository);
+
+	    new ProcessGameResultFileServices().run().apply(environment);
 
     }
 }
