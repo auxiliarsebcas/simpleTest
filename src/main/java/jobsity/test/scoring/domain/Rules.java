@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 public class Rules {
 
-	public  Try<GameResult,Throwable> calculateGameResult(List<ReleaseResult> results) {
+	public static Try<GameResult,Throwable> calculateGameResult(List<ReleaseResult> results) {
 		Map<String, List<ReleaseResult>> gamersMap =
 		results.stream().collect(Collectors.groupingBy(releaseResult -> releaseResult.gamerId) );
 
@@ -37,7 +37,7 @@ public class Rules {
 		).<GameResult>map( scoreResults -> new GameResult(results.get(0).gameName, scoreResults) );
 	}
 
-	public Tuple4<Frame, List<ReleaseResult>, Integer, Integer> calculateFrameResult(final List<ReleaseResult> releaseResults, final int head , final int frameCount, final int score) {
+	public static Tuple4<Frame, List<ReleaseResult>, Integer, Integer> calculateFrameResult(final List<ReleaseResult> releaseResults, final int head , final int frameCount, final int score) {
 		final int nextRelease = head+1;
 		if(frameCount==10) {
 			final int lastRelease = nextRelease + 1;
@@ -93,11 +93,11 @@ public class Rules {
 		}
 	}
 
-	public List<Frame> calculateFramesResult(final List<ReleaseResult> releaseResults) {
+	public static List<Frame> calculateFramesResult(final List<ReleaseResult> releaseResults) {
 	  return calculateFramesResult(releaseResults, 0, 1, 0);
 	}
 
-	public List<Frame> calculateFramesResult(List<ReleaseResult> releaseResults, final int head, final int frameCount, final int score){
+	public static List<Frame> calculateFramesResult(List<ReleaseResult> releaseResults, final int head, final int frameCount, final int score){
 		if( head<releaseResults.size() ) {
 			final  Tuple4<Frame, List<ReleaseResult>, Integer, Integer> calculusResutl =
 				calculateFrameResult(releaseResults, head, frameCount,score);

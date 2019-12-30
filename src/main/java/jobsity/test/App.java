@@ -3,12 +3,24 @@
  */
 package jobsity.test;
 
+import jobsity.test.infrastructure.configuration.ScoringConfiguration;
+import jobsity.test.scoring.ScoringEnvironment;
+import jobsity.test.scoring.repositories.BowlingGameResultRepository;
+import jobsity.test.scoring.repositories.BowlingGameResultRepositoryImpl;
+import jobsity.test.scoring.repositories.ScoringRepositoryImpl;
+
 public class App {
     public String getGreeting() {
         return "Hello world.";
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+	    ScoringConfiguration config = new ScoringConfiguration();
+	    ScoringRepositoryImpl scoringRepository = new ScoringRepositoryImpl();
+	    BowlingGameResultRepository bowlingGameResultRepository = new BowlingGameResultRepositoryImpl(config.fileReaderConfiguration);
+
+
+	    ScoringEnvironment environment = new ScoringEnvironment(config, scoringRepository, bowlingGameResultRepository);
+
     }
 }
