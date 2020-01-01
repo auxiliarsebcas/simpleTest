@@ -13,7 +13,8 @@ public class FieldValidations {
 	}
 
 	public static Validated<String, String> fieldShouldBeANumber(String field, String fieldName) {
-		if(StringUtils.isNumeric(field)) return Validated.valid(field);
+		if( field.toLowerCase().equals("f") ) return Validated.valid("0");
+		else if( StringUtils.isNumeric(field) ) return Validated.valid(field);
 		else return Validated.invalid("the field "+fieldName+" should be a number");
 	}
 
